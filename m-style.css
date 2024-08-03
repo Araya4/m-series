@@ -1,0 +1,74 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 62.50%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 95%;
+    height: 95%;
+  }
+  .container{
+    width: 80%;
+    height: fit-content;
+    margin-left: 3%;
+    
+  }
+  .btn, .dropdown-toggle{
+    width: fit-content;
+  }
+  .fi{
+    height: 50px;
+    width: 50px;
+  }
+  a{
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+  }
+  ul{
+    display: flex;
+  }
+.yisan{
+    height: 70px;
+    width: 70px;
+    background-image: url('asset/yi-san.jpg');
+    background-size: cover;
+  }
+  .sangdo{
+    height: 70px;
+    width: 70px;
+    background-image: url('asset/Sangdo-Merchants-of-Joseon.jpg');
+    background-size: cover;
+  }
+  .hurjun99{
+    height: 70px;
+    width: 70px;
+    background-image: url('asset/Hur-Jun-1999.jpg');
+    background-size: cover;
+}
+
+.jumong{
+  height: 70px;
+  width: 70px;
+  background-image: url('asset/jumong.jpg');
+  background-size: cover;
+}
+.seodong{
+    height: 70px;
+    width: 70px;
+    background-image: url('asset/Ballad_of_SeoDong.jpg');
+    background-size: cover;
+}
+.buddha{
+    height: 70px;
+    width: 70px;
+    background-image: url('asset/buddha.bmp');
+    background-size: cover;
+}
