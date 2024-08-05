@@ -14,19 +14,6 @@
     width: 95%;
     height: 95%;
   }
-  .container{
-    display: flex;
-    
-  }
-  .container-left{
-    width: 10%;
-
-  }
-  .container-right{
-    margin-left: 3%;
-    width: 60%;
-    height: fit-content;
-  }
 
   .btn, .dropdown-toggle{
     width: fit-content;
