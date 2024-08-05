@@ -18,14 +18,14 @@
                 </button>
                 <ul class="dropdown-menu">
                     <div class="btn-group">
-                        <a role="button" data-bs-toggle="collapse" href="#sangdo"><div class="sangdo"></div></a>
-                        <a role="button" data-bs-toggle="collapse" href="#seodong"><div class="seodong"></div></a>
-                        <a role="button" data-bs-toggle="collapse" href="#hurjun"><div class="hurjun99"></div></a>
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="sangdo" onclick="showVideo(this.value)"><div class="sangdo"></div></button>
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="seodong" onclick="showVideo(this.value)"><div class="seodong"></div></button>
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="hurjun" onclick="showVideo(this.value)"><div class="hurjun99"></div></button>
                     </div>
                     <div class="btn-group">
-                        <a role="button" data-bs-toggle="collapse" href="#yisan"><div class="yisan"></div></a>
-                        <a role="button" data-bs-toggle="collapse" href="#dongyi"><div class="jumong"></div></a>
-                        <a role="button" data-bs-toggle="collapse" href="#buddha"><div class="buddha"></div></a>
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="yisan" onclick="showVideo(this.value)"><div class="yisan"></div></button>
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="dongyi" onclick="showVideo(this.value)"><div class="dongyi"></div></button>
+                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="buddha" onclick="showVideo(this.value)"><div class="buddha"></div></button>
                         
                     </div>
                 </ul>
@@ -36,34 +36,40 @@
                     <i class="fa fa-youtube fa-3x" style="color:red;" aria-hidden="true"></i>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item btn" data-bs-toggle="collapse" href="#tf2024">Tensorflow</a></li>
-                    <li><a class="dropdown-item btn" data-bs-toggle="collapse" href="#mmds">MMSD</a></li>
-                    <li><a class="dropdown-item btn" data-bs-toggle="collapse" href="#CS156">CS156</a></li>
-                    <li><a class="dropdown-item btn" data-bs-toggle="collapse" href="#CPSC540">CPSC540</a></li>
-                    <li><a class="dropdown-item btn" data-bs-toggle="collapse" href="#MLFound">ML foundation</a></li>
+                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="tf2024" onclick="showVideo(this.value)">Tensorflow</button></li>
+                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="mmds" onclick="showVideo(this.value)">MMSD</button></li>
+                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CS156" onclick="showVideo(this.value)">CS156</button></li>
+                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CPSC540" onclick="showVideo(this.value)">CPSC540</button></li>
+                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="MLFound" onclick="showVideo(this.value)">ML foundation</button></li>
                 </ul>
             </div>
         </ul> 
     </div>
     <div class="container">
-        <div class="collapse video-container" id="seodong"><iframe src="https://www.youtube.com/embed/videoseries?list=PLxfhbpox4ajSZB57RpGhW4F4LhJtDIMKN" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="dongyi"><iframe src="https://www.youtube.com/embed/videoseries?list=PLoHUbsYCnjq_N3_tWGHV44wahLYnlABPs" frameborder="0" allowfullscreen></iframe></div> 
-        <div class="collapse video-container" id="hurjun"><iframe src="https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMtfO1NYl2UNgdrmwyZ-GfcV" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="buddha"><iframe src="https://www.youtube.com/embed/videoseries?list=PLbtT4qgTjcmmjeXs4rPQAydjaPC6Vrjho" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="sangdo"><iframe src="https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMvyuz7A2mxL-ZJapu4-RZfb" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="yisan"><iframe src="https://www.youtube.com/embed/videoseries?list=PLOBbhydezQbek3PJDx0tTiexzeMWly2JO" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="CS156"><iframe src="https://www.youtube.com/embed/videoseries?list=PLD63A284B7615313A" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="CPSC540"><iframe src="https://www.youtube.com/embed/videoseries?list=PLzERW_Obpmv9-3dnYYYG639X6QiRF4Zp_" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="MLFound"><iframe src="https://www.youtube.com/embed/videoseries?list=PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV" frameborder="0" allowfullscreen></iframe></div>
-
-        <div class="collapse video-container" id="mmds"><iframe src="https://www.youtube.com/embed/videoseries?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV" frameborder="0" allowfullscreen></iframe></div>
-        <div class="collapse video-container" id="tf2024"><iframe src="https://www.youtube.com/embed/videoseries?list=PLEiEAq2VkUUK0XdlDw_VaLZe54gPTaY8B" frameborder="0"></iframe></div>
-
+        <div class="collapse video-container" id="resVideo"><iframe id="myVdo" src="" frameborder="0" allowfullscreen></iframe></div>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    
+    <script>
+        const youtubeID = {
+            "seodong":"https://www.youtube.com/embed/videoseries?list=PLxfhbpox4ajSZB57RpGhW4F4LhJtDIMKN",
+            "dongyi":"https://www.youtube.com/embed/videoseries?list=PLoHUbsYCnjq_N3_tWGHV44wahLYnlABPs",
+            "hurjun":"https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMtfO1NYl2UNgdrmwyZ-GfcV",
+            "buddha":"https://www.youtube.com/embed/videoseries?list=PLbtT4qgTjcmmjeXs4rPQAydjaPC6Vrjho",
+            "sangdo":"https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMvyuz7A2mxL-ZJapu4-RZfb",
+            "yisan":"https://www.youtube.com/embed/videoseries?list=PLOBbhydezQbek3PJDx0tTiexzeMWly2JO",
+            "CS156":"https://www.youtube.com/embed/videoseries?list=PLD63A284B7615313A",
+            "CPSC540":"https://www.youtube.com/embed/videoseries?list=PLzERW_Obpmv9-3dnYYYG639X6QiRF4Zp_",
+            "MLFound":"https://www.youtube.com/embed/videoseries?list=PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV",
+            "mmds":"https://www.youtube.com/embed/videoseries?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV",
+            "tf2024":"https://www.youtube.com/embed/videoseries?list=PLEiEAq2VkUUK0XdlDw_VaLZe54gPTaY8B"
+        }
+        function showVideo(ytID){
+            document.getElementById("myVdo").src = youtubeID[ytID];
+        }
+    </script>
 </body>
 </html>
