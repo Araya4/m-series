@@ -11,43 +11,47 @@
 </head>
 <body>
     <div class="container">
-        <ul class="list-group">
-            <div class="btn btn-group dropend">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="fi fi-kr"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <div class="btn-group">
-                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="sangdo" onclick="showVideo(this.value)"><div class="sangdo"></div></button>
-                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="seodong" onclick="showVideo(this.value)"><div class="seodong"></div></button>
-                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="hurjun" onclick="showVideo(this.value)"><div class="hurjun99"></div></button>
-                    </div>
-                    <div class="btn-group">
-                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="yisan" onclick="showVideo(this.value)"><div class="yisan"></div></button>
-                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="dongyi" onclick="showVideo(this.value)"><div class="dongyi"></div></button>
-                        <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="buddha" onclick="showVideo(this.value)"><div class="buddha"></div></button>
-                        
-                    </div>
-                </ul>
-            </div>
+        <div class="container-left">
+            <ul class="list-group">
+                <div class="btn btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fi fi-kr"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <div class="btn-group">
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="sangdo" onclick="showVideo(this.value)"><div class="sangdo"></div></button>
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="seodong" onclick="showVideo(this.value)"><div class="seodong"></div></button>
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="hurjun" onclick="showVideo(this.value)"><div class="hurjun99"></div></button>
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="yisan" onclick="showVideo(this.value)"><div class="yisan"></div></button>
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="dongyi" onclick="showVideo(this.value)"><div class="dongyi"></div></button>
+                            <button class="btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="buddha" onclick="showVideo(this.value)"><div class="buddha"></div></button>
+                            
+                        </div>
+                    </ul>
+                </div>
 
-            <div class="btn btn-group dropend">
-                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa fa-youtube fa-3x" style="color:red;" aria-hidden="true"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="tf2024" onclick="showVideo(this.value)">Tensorflow</button></li>
-                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="mmds" onclick="showVideo(this.value)">MMSD</button></li>
-                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CS156" onclick="showVideo(this.value)">CS156</button></li>
-                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CPSC540" onclick="showVideo(this.value)">CPSC540</button></li>
-                    <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="MLFound" onclick="showVideo(this.value)">ML foundation</button></li>
-                </ul>
-            </div>
-        </ul> 
-    </div>
-    <div class="container">
-        <div class="collapse video-container" id="resVideo"><iframe id="myVdo" src="" frameborder="0" allowfullscreen></iframe></div>
-        
+                <div class="btn btn-group dropend">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-youtube fa-3x" style="color:red;" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="tf2024" onclick="showVideo(this.value)">Tensorflow</button></li>
+                        <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="mmds" onclick="showVideo(this.value)">MMSD</button></li>
+                        <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CS156" onclick="showVideo(this.value)">CS156</button></li>
+                        <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CPSC540" onclick="showVideo(this.value)">CPSC540</button></li>
+                        <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="MLFound" onclick="showVideo(this.value)">ML foundation</button></li>
+                    </ul>
+                </div>
+
+                
+            </ul> 
+        </div>
+        <div class="container-right">
+            <div class="collapse video-container" id="resVideo"><iframe id="myVdo" src="" frameborder="0" allowfullscreen></iframe></div>
+            
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
