@@ -1,3 +1,32 @@
+body{
+    background-color: #D8EFD3;
+    cursor: pointer;
+}
+
+/* Ensure the right-side div is fixed in size and scrollable */
+.scrollable-div {
+    background-color: #95D2B3;
+    margin-top: 2%;
+    height: 40vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+    border: 1px solid #ddd; /* Optional border for visibility */
+    padding: 0px; /* Optional padding */
+}
+
+/* Style for text boxes */
+.text-box , .kr-series{
+    background-color: #FBF9F1;
+    color: #55AD9B;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1%; /* Space between text boxes */
+    padding: 1px;
+}
+.text-box:hover , .kr-series:hover{
+    background-color: #55AD9B;
+    color:#FBF9F1;
+}
+
 .video-container {
     position: relative;
     width: 100%;
@@ -11,103 +40,6 @@
     position: absolute;
     top: 0;
     left: 5%;
-    width: 95%;
-    height: 95%;
+    width: 90%;
+    height: 90%;
   }
-
-  .btn, .dropdown-toggle{
-    width: fit-content;
-  }
-  a{
-    text-decoration: none;
-    color:red;
-    font-weight: bold;
-  }
-  ul{
-    display: flex;
-  }
-.yisan{
-    height: 70px;
-    width: 70px;
-    background-image: url('asset/yi-san.jpg');
-    background-size: cover;
-  }
-  .sangdo{
-    height: 70px;
-    width: 70px;
-    background-image: url('asset/Sangdo-Merchants-of-Joseon.jpg');
-    background-size: cover;
-  }
-  .hurjun99{
-    height: 70px;
-    width: 70px;
-    background-image: url('asset/Hur-Jun-1999.jpg');
-    background-size: cover;
-}
-
-.dongyi{
-  height: 70px;
-  width: 70px;
-  background-image: url('asset/Dong_Yi.jpg');
-  background-size: cover;
-}
-.seodong{
-    height: 70px;
-    width: 70px;
-    background-image: url('asset/Ballad_of_SeoDong.jpg');
-    background-size: cover;
-}
-.buddha{
-    height: 70px;
-    width: 70px;
-    background-image: url('./Buddha-boxset_removebg.png');
-    background-size: cover;
-}
-.royal-doctor{
-    height: 70px;
-    width: 70px;
-    background-image: url('./royalDoctor.jpg');
-    background-size: cover;
-}
-.dee-mcot{
-  height: 70px;
-  width: 70px;
-  background-image: url("./Dee-Detective.jpg");
-  background-size: cover;
-}
-.thumbnail{
-    width: 85.2px; /* 426px */
-    height: 48px; /*240px*/
-}
-.fi{
-    height: 70px;
-    width: 70px;
-  }
-.theLegend{
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-mZHXY3HgI3Dg9dis7Wx-Q5rQ_trw9WLqQ&s');
-    height: 70px;
-    width: 70px;
-    background-size: cover;
-}
-.DeeS2{
-    background-image: url('https://i.ibb.co/HGLy3Kd/Amazing-Detective-Di-Renjie-2.jpg');
-    height: 70px;
-    width: 70px;
-    background-size: cover;
-}
-.DeeS3{
-    background-image: url('https://i.ibb.co/qW14THn/Amazing-Detective-Di-Renjie-3.jpg');
-    height: 70px;
-    width: 70px;
-    background-size: cover;
-}
-.bg-cadetblue{
-    background-color: cadetblue;
-    color: wheat;
-}
-.otherSeries{
-    background-image: url("https://i.ibb.co/nzRWpnC/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png");
-    height: 70px;
-    width: 70px;
-    background-size: cover;
-}
