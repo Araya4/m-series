@@ -60,7 +60,7 @@
 .buddha{
     height: 70px;
     width: 70px;
-    background-image: url('asset/buddha.bmp');
+    background-image: url('https://i.ibb.co/pdkHz0P/Buddha-boxset.jpg');
     background-size: cover;
 }
 .royal-doctor{
@@ -92,6 +92,16 @@
 }
 .DeeS3{
     background-image: url('https://i.ibb.co/qW14THn/Amazing-Detective-Di-Renjie-3.jpg');
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+}
+.bg-cadetblue{
+    background-color: cadetblue;
+    color: wheat;
+}
+.otherSeries{
+    background-image: url("https://i.ibb.co/nzRWpnC/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png");
     height: 70px;
     width: 70px;
     background-size: cover;
