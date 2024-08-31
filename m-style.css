@@ -69,7 +69,12 @@
     background-image: url('./royalDoctor.jpg');
     background-size: cover;
 }
-
+.dee-mcot{
+  height: 70px;
+  width: 70px;
+  background-image: url("https://i.ibb.co/ZgBhyFy/Dee-Detective.jpg");
+  background-size: cover;
+}
 .thumbnail{
     width: 85.2px; /* 426px */
     height: 48px; /*240px*/
