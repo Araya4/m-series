@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
     <link rel="stylesheet" href="m-style.css">
     <title> 🇮🇳 🇰🇷 🇨🇳 🇹🇭 Series </title>
-    
+    <style>
+        .royal-doctor{
+            height: 70px;
+            width: 70px;
+            background-image: url('https://assets.ch3plus.com/program/2023/03/928978064681.jpg');
+            background-size: cover;
+        }
+
+        .thumbnail{
+            width: 85.2px; /* 426px */
+            height: 48px; /*240px*/
+        }
+        #royalDoctor{
+            display: flex;
+            flex-wrap: wrap;
+            gap:0.5%;
+            width: 360px;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,41 +54,88 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-youtube fa-3x" style="color:red;" aria-hidden="true"></i>
+                                <div class="royal-doctor"></div>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="tf2024" onclick="showVideo(this.value)">Tensorflow</button></li>
-                                <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="mmds" onclick="showVideo(this.value)">MMSD</button></li>
-                                <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CS156" onclick="showVideo(this.value)">CS156</button></li>
-                                <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="CPSC540" onclick="showVideo(this.value)">CPSC540</button></li>
-                                <li><button class="dropdown-item btn" data-bs-toggle="collapse" data-bs-target="#resVideo" value="MLFound" onclick="showVideo(this.value)">ML foundation</button></li>
+                            <ul class="dropdown-menu" id="royalDoctor">
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                <li><button class="dropdown-item btn" ><img class="thumbnail" src="" alt=""></button></li>
+                                
+                                
                             </ul>
                         </li>
                     </ul>
                 </div>
         </div>
     </nav>
-    <div class="collapse video-container" id="resVideo"><iframe id="myVdo" src="" frameborder="0" allowfullscreen></iframe></div>
+    <div class="collapse video-container" id="resVideo"><iframe id="myVdo" src="about:blank" frameborder="0" allowfullscreen></iframe></div>
         
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script>
+        const videoRes = document.getElementById("myVdo");
+        const arrSrc = [
+        "k67GBsH6KHMt0sBlZam" , 'k4vik4QaAhibmHBlZio' , 'k38EjQ3yvi40m6BlZim' , 'k2nISFY0nl4OY6BlZik','kZyrYnOwlYFoiNBlZig',
+            'k6SMmcKlfLs5H6BlZii','k1zMQmiZCHqCMBBlZEi','k7q3j3t4Vvbs0WBlZEg','ko9txT3mPXqW44BlZEa','k5roxIbt2Tn5YRBlZEc',
+            'k5jZQHHPOavmazBn4yG','kFznqQYbMplvFYBn4yy','kUkWgOFiaBqrm6Bn4tq','k5QsQYegtqJmBtBn4yC','k5B21GO2rEIMyGBn4yA',
+            'k43avMNSRrAf7RBn4ys','k1psNf0L5VCUjSBn4yw','k5x7TlqgPAft7OBn4yu','k7JRMfE37Zw6HQBn4yq','k70FbxeovO1XJUBn4yE',
+            '1003029247','1003032131'];
+        let videoUrl = new Array();
+        let imgUrl = new Array();
+        arrSrc.forEach((ele,i)=>{
+            if(Number(i)>=20){
+                videoUrl.push(`https://player.vimeo.com/video/${ele}?badge=0&autopause=0&player_id=0&app_id=58479`);
+                imgUrl.push("./cards.png");
+                
+            }else{
+                videoUrl.push(`https://www.dailymotion.com/embed/video/${ele}`);
+                imgUrl.push(`https://www.dailymotion.com/thumbnail/video/${ele}`);
+            }
+        })
+        document.querySelectorAll('.thumbnail').forEach((x,i)=>{
+            x.src = imgUrl[Number(i)];
+        })
+
+
+        const royalID = document.getElementById("royalDoctor");
+        const btnS = royalID.querySelectorAll("button");
+        btnS.forEach((btn, idx)=>{
+            btn.addEventListener('click',function(e){
+                e.preventDefault();
+                videoRes.src = videoUrl[Number(idx)];
+                
+            })
+        })
+
         const youtubeID = {
             "seodong":"https://www.youtube.com/embed/videoseries?list=PLxfhbpox4ajSZB57RpGhW4F4LhJtDIMKN",
             "dongyi":"https://www.youtube.com/embed/videoseries?list=PLoHUbsYCnjq_N3_tWGHV44wahLYnlABPs",
             "hurjun":"https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMtfO1NYl2UNgdrmwyZ-GfcV",
             "buddha":"https://www.youtube.com/embed/videoseries?list=PLbtT4qgTjcmmjeXs4rPQAydjaPC6Vrjho",
             "sangdo":"https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMvyuz7A2mxL-ZJapu4-RZfb",
-            "yisan":"https://www.youtube.com/embed/videoseries?list=PLOBbhydezQbek3PJDx0tTiexzeMWly2JO",
-            "CS156":"https://www.youtube.com/embed/videoseries?list=PLD63A284B7615313A",
-            "CPSC540":"https://www.youtube.com/embed/videoseries?list=PLzERW_Obpmv9-3dnYYYG639X6QiRF4Zp_",
-            "MLFound":"https://www.youtube.com/embed/videoseries?list=PLOU2XLYxmsII9mzQ-Xxug4l2o04JBrkLV",
-            "mmds":"https://www.youtube.com/embed/videoseries?list=PLLssT5z_DsK9JDLcT8T62VtzwyW9LNepV",
-            "tf2024":"https://www.youtube.com/embed/videoseries?list=PLEiEAq2VkUUK0XdlDw_VaLZe54gPTaY8B"
-        }
+            "yisan":"https://www.youtube.com/embed/videoseries?list=PLOBbhydezQbek3PJDx0tTiexzeMWly2JO"  }
         function showVideo(ytID){
-            document.getElementById("myVdo").src = youtubeID[ytID];
+            videoRes.src = youtubeID[ytID];
         }
     </script>
 </body>
