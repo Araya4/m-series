@@ -18,10 +18,6 @@
   .btn, .dropdown-toggle{
     width: fit-content;
   }
-  .fi{
-    height: 50px;
-    width: 50px;
-  }
   a{
     text-decoration: none;
     color:red;
@@ -65,5 +61,38 @@
     height: 70px;
     width: 70px;
     background-image: url('asset/buddha.bmp');
+    background-size: cover;
+}
+.royal-doctor{
+    height: 70px;
+    width: 70px;
+    background-image: url('./royalDoctor.jpg');
+    background-size: cover;
+}
+
+.thumbnail{
+    width: 85.2px; /* 426px */
+    height: 48px; /*240px*/
+}
+.fi{
+    height: 70px;
+    width: 70px;
+  }
+.theLegend{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-mZHXY3HgI3Dg9dis7Wx-Q5rQ_trw9WLqQ&s');
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+}
+.DeeS2{
+    background-image: url('https://i.ibb.co/HGLy3Kd/Amazing-Detective-Di-Renjie-2.jpg');
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+}
+.DeeS3{
+    background-image: url('https://i.ibb.co/qW14THn/Amazing-Detective-Di-Renjie-3.jpg');
+    height: 70px;
+    width: 70px;
     background-size: cover;
 }
