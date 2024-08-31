@@ -1,182 +1,82 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
-<link rel="stylesheet" href="m-style.css">
-<title> 🇮🇳 🇰🇷 🇹🇭 Series </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หมอหลวง</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./m-style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-cadetblue">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Series</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="fi fi-kr"></span>
-                        </a>
-                        <ul class="dropdown-menu bg-cadetblue" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <div class="btn-group">
-                                <button class="btn" value="sangdo" onclick="showVideo(this.value)"><div class="sangdo"></div></button>
-                                <button class="btn" value="seodong" onclick="showVideo(this.value)"><div class="seodong"></div></button>
-                                <button class="btn" value="hurjun" onclick="showVideo(this.value)"><div class="hurjun99"></div></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" value="yisan" onclick="showVideo(this.value)"><div class="yisan"></div></button>
-                                <button class="btn" value="dongyi" onclick="showVideo(this.value)"><div class="dongyi"></div></button>
-                                
-                                <button class="btn" value="theLegend" onclick="showVideo(this.value)"><div class="theLegend"></div></button>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="royal-doctor"></div>
-                        </a>
-                        <ul class="dropdown-menu bg-cadetblue" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-9">
+                <!-- Left side content -->
+                <div class="video-container">
+                    <iframe id="myVideo" src="about:blank" frameborder="0" allowfullscreen></iframe>
 
-                            </div>
-                        </ul>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Right side fixed-size and scrollable -->
+                <div class="scrollable-div">
+                    <div class="kr-series" onclick="showVideo('seodong')">ซอดองโย</div>
+                    <div class="kr-series" onclick="showVideo('dongyi')">ทงอี จอมนางคู่บัลลังก์</div>
+                    <div class="kr-series" onclick="showVideo('hurjun')">คนดีที่โลกรอ หมอโฮจุน</div>
+                    <div class="kr-series" onclick="showVideo('buddha')">พระพุทธเจ้า มหาศาสดาโลก</div>
+                    <div class="kr-series" onclick="showVideo('sangdo')">อิมซังอ๊ก ยอดพ่อค้าหัวใจทรนง</div>
+                    <div class="kr-series" onclick="showVideo('yisan')">ลีซาน จอมบัลลังก์พลิกแผ่นดิน</div>
+                    <div class="kr-series" onclick="showVideo('theLegend')">ตำนานจอมกษัตริย์เทพสวรรค์</div>
+                    <div class="kr-series" onclick="showVideo('DeeS2')">ตี๋เหรินเจี๋ย Season 2</div>
+                    <div class="kr-series" onclick="showVideo('DeeS3')">ตี๋เหรินเจี๋ย Season 3</div>
 
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="dee-mcot"></div>
-                        </a>
-                        <ul class="dropdown-menu bg-cadetblue" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-                            <div class="btn-group">
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                                <button class="btn" ><img class="thumbnail" src="" alt=""></button>
-                            </div>
-
-                        </ul>
-                        
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="navbar-brand nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <div class="otherSeries"></div>
-                        </a>
-                        <ul class="dropdown-menu bg-cadetblue" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <div class="btn-group">
-                                <button class="btn" value="DeeS2" onclick="showVideo(this.value)"><div class="DeeS2"></div></button>
-                                <button class="btn" value="DeeS3" onclick="showVideo(this.value)"><div class="DeeS3"></div></button>
-                                <button class="btn" value="buddha" onclick="showVideo(this.value)"><div class="buddha"></div></button>
-                            </div>
-                        </ul>
-                    </li>
-                </ul>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 3/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 3/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 4/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 5/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 5/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 6/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 6/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 7/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 7/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 8/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 8/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 9/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 9/2</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 10/1</div>
+                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 10/2</div>
+                    <div class="kr-series" onclick="showVideo('seodong')">ซอดองโย</div>
+                    
+                    <!-- Add more text boxes as needed -->
+                </div>
             </div>
         </div>
-    </nav>
-    
-    <div class="video-container" id="resVideo"><iframe id="myVdo" src="about:blank" frameborder="0" allowfullscreen></iframe></div>
-        
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script>
-        const videoRes = document.getElementById("myVdo");
-        const arrSrc = [
-        "k67GBsH6KHMt0sBlZam" , 'k4vik4QaAhibmHBlZio' , 'k38EjQ3yvi40m6BlZim' , 'k2nISFY0nl4OY6BlZik','kZyrYnOwlYFoiNBlZig',
-            'k6SMmcKlfLs5H6BlZii','k1zMQmiZCHqCMBBlZEi','k7q3j3t4Vvbs0WBlZEg','ko9txT3mPXqW44BlZEa','k5roxIbt2Tn5YRBlZEc',
-            'k5jZQHHPOavmazBn4yG','kFznqQYbMplvFYBn4yy','kUkWgOFiaBqrm6Bn4tq','k5QsQYegtqJmBtBn4yC','k5B21GO2rEIMyGBn4yA',
-            'k43avMNSRrAf7RBn4ys','k1psNf0L5VCUjSBn4yw','k5x7TlqgPAft7OBn4yu','k7JRMfE37Zw6HQBn4yq','k70FbxeovO1XJUBn4yE',
-            '1003029247','1003032131' , 'x6qdt2d', 'x6qrxm2','x6qwtxj','x6qwvg5','x6r1ufz', 'x6rbp8m','x6rbrgh','x6rbvhn',
-            'x6rbwzt', 'x6rjewh','x6rjhk7','x6sxcp5','x6sxcp4', 'x6w1ktw','x6w1lrh','x6w1u48','x6w1ukp'];
-        let videoUrl = new Array();
-        let imgUrl = new Array();
-        arrSrc.forEach((ele,i)=>{
-            if(Number(i)>=20 && Number(i)<22){
-                videoUrl.push(`https://player.vimeo.com/video/${ele}?badge=0&autopause=0&player_id=0&app_id=58479`);
-                imgUrl.push("./cards.png");
-                
-            }else if(Number(i)>21){
-                videoUrl.push(`https://geo.dailymotion.com/player.html?video=${ele}&autoplay=1`);
-                imgUrl.push(`https://www.dailymotion.com/thumbnail/video/${ele}`);
-            }
-            else{
-                videoUrl.push(`https://www.dailymotion.com/embed/video/${ele}`);
-                imgUrl.push(`https://www.dailymotion.com/thumbnail/video/${ele}`);
-            }
-        })
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-        document.querySelectorAll('.thumbnail').forEach((x,i)=>{
-            x.src = imgUrl[Number(i)];
-            var parent = x.parentElement;
-            parent.addEventListener('click',function(e){
-                e.preventDefault();
-                videoRes.src = videoUrl[Number(i)];
-            })
+    <script>
+        const arrSrc = [ 'x6qdt2d', 'x6qrxm2','x6qwtxj','x6qwvg5','x6r1ufz', 'x6rbp8m','x6rbrgh','x6rbvhn',
+            'x6rbwzt', 'x6rjewh','x6rjhk7','x6sxcp5','x6sxcp4', 'x6w1ktw','x6w1lrh','x6w1u48','x6w1ukp'];
+        const videoUrl = arrSrc.map((v,idx)=>{
+            return `https://geo.dailymotion.com/player.html?video=${v}&autoplay=1`
         })
-        var brand = document.getElementsByClassName("navbar-brand");
-        brand[0].addEventListener('click',()=>{videoRes.src = "about:blank"});
+        console.log(videoUrl.length);
+
+        const res = document.getElementById("myVideo");
+        const textS = document.querySelectorAll(".text-box");
+        textS.forEach((element,idx)=>{
+            element.addEventListener('click',function(e){
+                e.preventDefault();
+                res.src = videoUrl[Number(idx)];
+
+            })
+            
+        })
 
         const youtubeID = {
             "seodong":"https://www.youtube.com/embed/videoseries?list=PLxfhbpox4ajSZB57RpGhW4F4LhJtDIMKN",
@@ -190,8 +90,10 @@
             "DeeS3":"https://www.youtube.com/embed/videoseries?list=PLhA5A89xxhfxNrsG7zzs9qAXKVqo68ASO" 
         }
         function showVideo(ytID){
-            videoRes.src = youtubeID[ytID];
+            console.log(youtubeID[ytID]);
+            res.src = youtubeID[ytID];
         }
+
     </script>
 </body>
 </html>
