@@ -1,105 +1,95 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archive TV Series</title>
     <link rel="shortcut icon" href="https://i.ibb.co/yycK59k/blue-glossy-home-icon-removebg-preview.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./m-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scrollable.css">
+    <title>Archive TV Series</title>
+    <style>
+        /* Style for text boxes */
+        .text-box , .kr-series{
+            background-color: transparent;
+            color: #0F67B1;
+            border: 0.1px solid #ddd;
+            border-radius: 4px;
+        }
+        .text-box:hover , .kr-series:hover{
+            background-color: #3FA2F6;
+            color:#FAFFAF;
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-9">
-                <!-- Left side content -->
-                <div class="video-container">
-                    <iframe id="myVideo" src="about:blank" frameborder="0" allowfullscreen></iframe>
+    <div class="container-fluid row">
+        <div class="col-md-9">
+            <!-- Left side content -->
+            <div class="video-container">
+                <iframe id="myVideo" src="about:blank" frameborder="0" allowfullscreen></iframe>
 
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-header">
+                <button class="btn btn-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mylist2" aria-expanded="false" aria-controls="mylist2">
+                    ตี๋เหรินเจี๋ย
+                </button>
+                <button class="btn btn-custom collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mylist1" aria-expanded="false" aria-controls="mylist1">
+                    Other
+                </button>
                 </div>
             </div>
-            <div class="col-md-3">
-                <!-- Right side fixed-size and scrollable -->
-                <button class="btn" data-bs-toggle="collapse" data-bs-target="#mylist2">ตี๋เหรินเจี๋ย</button>
-                <button class="btn" data-bs-toggle="collapse" data-bs-target="#mylist1">Other</button>
-                <!-- <button class="btn" data-bs-toggle="collapse" data-bs-target="#mylist2">หมอหลวง</button> -->
-                <div class="scrollable-div collapse" id="mylist1">
-                    <div class="kr-series" onclick="showVideo('seodong')">ซอดองโย</div>
-                    <div class="kr-series" onclick="showVideo('dongyi')">ทงอี จอมนางคู่บัลลังก์</div>
-                    <div class="kr-series" onclick="showVideo('hurjun')">คนดีที่โลกรอ หมอโฮจุน</div>
-                    <div class="kr-series" onclick="showVideo('buddha')">พระพุทธเจ้า มหาศาสดาโลก</div>
-                    <div class="kr-series" onclick="showVideo('sangdo')">อิมซังอ๊ก ยอดพ่อค้าหัวใจทรนง</div>
-                    <div class="kr-series" onclick="showVideo('yisan')">ลีซาน จอมบัลลังก์พลิกแผ่นดิน</div>
-                    <div class="kr-series" onclick="showVideo('theLegend')">ตำนานจอมกษัตริย์เทพสวรรค์</div>
-
+            <div class="accordion" id="accordionFlushExample">
+        
+                <div id="mylist1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="scrollable-div">
+                            <div class="kr-series" onclick="showVideo('seodong')">ซอดองโย</div>
+                            <div class="kr-series" onclick="showVideo('dongyi')">ทงอี จอมนางคู่บัลลังก์</div>
+                            <div class="kr-series" onclick="showVideo('hurjun')">คนดีที่โลกรอ หมอโฮจุน</div>
+                            <div class="kr-series" onclick="showVideo('buddha')">พระพุทธเจ้า มหาศาสดาโลก</div>
+                            <div class="kr-series" onclick="showVideo('sangdo')">อิมซังอ๊ก ยอดพ่อค้าหัวใจทรนง</div>
+                            <div class="kr-series" onclick="showVideo('yisan')">ลีซาน จอมบัลลังก์พลิกแผ่นดิน</div>
+                            <div class="kr-series" onclick="showVideo('theLegend')">ตำนานจอมกษัตริย์เทพสวรรค์</div>
+                         </div>
+                    </div>    
                 </div>
-                <div class="scrollable-div collapse" id="mylist2">
-                    <div class="kr-series" onclick="showVideo('DeeS2')">ตี๋เหรินเจี๋ย Season 2</div>
-                    <div class="kr-series" onclick="showVideo('DeeS3')">ตี๋เหรินเจี๋ย Season 3</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 3/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 3/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 4/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 5/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 5/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 6/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 6/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 7/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 7/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 8/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 8/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 9/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 9/2</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 10/1</div>
-                    <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 10/2</div>
-           
-                    
-                    <!-- Add more text boxes as needed -->
+                <div id="mylist2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="scrollable-div">
+                            <div class="kr-series" onclick="showVideo('DeeS2')">ตี๋เหรินเจี๋ย Season 2</div>
+                            <div class="kr-series" onclick="showVideo('DeeS3')">ตี๋เหรินเจี๋ย Season 3</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 3/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 3/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 4/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 5/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 5/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 6/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 6/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 7/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 7/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 8/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 8/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 9/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 9/2</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 10/1</div>
+                            <div class="text-box">ตี๋เหรินเจี๋ย ยอดนักสืบราชวงศ์ถัง ตอนที่ 10/2</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+    
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
-    <script>
-        const arrSrc = [ 'x6qdt2d', 'x6qrxm2','x6qwtxj','x6qwvg5','x6r1ufz', 'x6rbp8m','x6rbrgh','x6rbvhn',
-            'x6rbwzt', 'x6rjewh','x6rjhk7','x6sxcp5','x6sxcp4', 'x6w1ktw','x6w1lrh','x6w1u48','x6w1ukp'];
-        const videoUrl = arrSrc.map((v,idx)=>{
-            return `https://geo.dailymotion.com/player.html?video=${v}&autoplay=1`
-        })
-        console.log(videoUrl.length);
-
-        const res = document.getElementById("myVideo");
-        const textS = document.querySelectorAll(".text-box");
-        textS.forEach((element,idx)=>{
-            element.addEventListener('click',function(e){
-                e.preventDefault();
-                res.src = videoUrl[Number(idx)];
-
-            })
-            
-        })
-
-        const youtubeID = {
-            "seodong":"https://www.youtube.com/embed/videoseries?list=PLxfhbpox4ajSZB57RpGhW4F4LhJtDIMKN",
-            "dongyi":"https://www.youtube.com/embed/videoseries?list=PLoHUbsYCnjq_N3_tWGHV44wahLYnlABPs",
-            "hurjun":"https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMtfO1NYl2UNgdrmwyZ-GfcV",
-            "buddha":"https://www.youtube.com/embed/videoseries?list=PLbtT4qgTjcmmjeXs4rPQAydjaPC6Vrjho",
-            "sangdo":"https://www.youtube.com/embed/videoseries?list=PLymm91FIIzMvyuz7A2mxL-ZJapu4-RZfb",
-            "yisan":"https://www.youtube.com/embed/videoseries?list=PLOBbhydezQbek3PJDx0tTiexzeMWly2JO" ,
-            "theLegend":"https://www.youtube.com/embed/videoseries?list=PLGH-CIYjsKx54QLiHQIH4F2ZobAVKVVpF" ,
-            "DeeS2":"https://www.youtube.com/embed/videoseries?list=PLrHp1Mm55sYo_W5tW5vVhA8ZcldvFR3gL" ,
-            "DeeS3":"https://www.youtube.com/embed/videoseries?list=PLhA5A89xxhfxNrsG7zzs9qAXKVqo68ASO" 
-        }
-        function showVideo(ytID){
-            console.log(youtubeID[ytID]);
-            res.src = youtubeID[ytID];
-        }
-
-    </script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
