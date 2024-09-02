@@ -1,0 +1,80 @@
+body{
+    background-color: #96C9F4;
+    cursor: pointer;
+}
+
+.btn-custom{
+    background-color: transparent;
+    color:#0090d9;
+}
+
+/* Ensure the right-side div is fixed in size and scrollable */
+.scrollable-div {
+    background-color: transparent;
+    height: 50vh; /* Adjust the height as needed */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+    padding: 0px; /* Optional padding */
+}
+
+/* Style for text boxes */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 62.50%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+  .accordion-header{
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .accordion-button{ background-color: transparent; color:#0F67B1;}
+  .accordion-item{
+    position: relative;
+    background-color: transparent;
+    border-radius: 10px;
+
+
+  }
+  i{
+    color:#00A9FF;
+  }
+  a{
+    text-decoration: none;
+    display: block;
+  }
+  .scrollable-div > a:nth-child(odd) {
+    background-color: #b9f3ff;
+    color:#0090d9;
+  }
+  .scrollable-div > a:nth-child(even) {
+    background-color: transparent;
+    color:#0090d9;
+  }
+  .scrollable-div > a:hover{
+    color:#359efa;
+    font-weight: bold;
+  }
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body{
+    padding: 0.2%;
+    border: none;
+}
+.card-body > i{
+    color:#00A9FF;
+    margin-left: 1%;
+}
